@@ -12,7 +12,14 @@ class courseListViewController: UITableViewController {
     
     var courseNameList = [
         "ABC001",
-        "ABC002"
+        "ABC002",
+        "ABC003",
+        "ABC004",
+        "ABC005",
+        "ABC006",
+        "ABC007",
+        "ABC008",
+        "ABC009",
     ]
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
