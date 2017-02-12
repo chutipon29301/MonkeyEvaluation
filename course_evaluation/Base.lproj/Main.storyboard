@@ -68,12 +68,12 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="CourseList" id="5Na-M6-GXU"/>
                     <connections>
-                        <segue destination="kcf-ef-Fkk" kind="show" identifier="showEvaluation" id="JqT-ek-U6f"/>
+                        <segue destination="kcf-ef-Fkk" kind="show" identifier="showEvaluation" id="bWf-vV-rbd"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BwN-zU-SDg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1167" y="777"/>
+            <point key="canvasLocation" x="1119" y="777"/>
         </scene>
         <!--Course Name-->
         <scene sceneID="UdX-f0-rWC">
@@ -115,12 +115,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Course Name" id="ulK-OQ-CGM"/>
                     <connections>
+                        <outlet property="courseName" destination="ulK-OQ-CGM" id="NtR-9y-uPv"/>
                         <outlet property="inputBox" destination="RcR-bD-oZE" id="Y5Z-ps-iSB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ftU-1O-bQ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2445.5999999999999" y="776.76161919040487"/>
+            <point key="canvasLocation" x="2377" y="777"/>
         </scene>
     </scenes>
 </document>

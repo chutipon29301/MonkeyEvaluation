@@ -9,6 +9,8 @@
 import UIKit
 
 class courseNameViewController: UIViewController {
+    
+    @IBOutlet weak var courseName: UINavigationItem!
     @IBOutlet weak var inputBox: UITextField!
     
     @IBAction func confirmBtn(_ sender: UIButton) {

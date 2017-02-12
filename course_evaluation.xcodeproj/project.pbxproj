@@ -426,7 +426,7 @@
 				DEVELOPMENT_TEAM = H5J9UB8D3F;
 				INFOPLIST_FILE = course_evaluation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mkyhybrid.course-evaluation";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Chutipon.course-evaluation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -439,7 +439,7 @@
 				DEVELOPMENT_TEAM = H5J9UB8D3F;
 				INFOPLIST_FILE = course_evaluation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mkyhybrid.course-evaluation";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.Chutipon.course-evaluation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
