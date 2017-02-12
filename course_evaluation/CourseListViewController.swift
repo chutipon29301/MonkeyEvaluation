@@ -42,7 +42,6 @@ class courseListViewController: UITableViewController {
             let destination = segue.destination as! courseNameViewController
             destination.courseName.title = courseNameList[(sender as! IndexPath).row]
         }
-        
     }
 }
 

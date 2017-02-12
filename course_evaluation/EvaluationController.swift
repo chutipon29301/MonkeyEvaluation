@@ -6,4 +6,12 @@
 //  Copyright © 2017 Macintosh. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class EvaluationViewController: UIViewController {
+    @IBOutlet weak var navigationName: UINavigationItem!
+    
+    @IBAction func cancelBtnPress(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
+}
