@@ -33,7 +33,6 @@ class courseListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
         performSegue(withIdentifier: "showEvaluation", sender: indexPath)
     }
     
