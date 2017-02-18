@@ -9,6 +9,10 @@
 import UIKit
 
 class EvaluationViewController: UIViewController {
+    
+    var numberOfStudent: Int!
+    
+
     @IBOutlet weak var navigationName: UINavigationItem!
     
     @IBAction func cancelBtnPress(_ sender: UIBarButtonItem) {

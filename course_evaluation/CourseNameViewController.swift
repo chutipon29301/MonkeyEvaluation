@@ -26,16 +26,18 @@ class courseNameViewController: UIViewController {
     }
     
     @IBAction func submit(_ sender: UIButton) {
-        let temp = studentCount.text!
+        let sendableObject = CourseData(courseName: courseName.title, numberOfStudent: Int(studentCount.text!)!)
         studentCount.text! = "0"
-        performSegue(withIdentifier: "showEvaluationController", sender: temp)
+        performSegue(withIdentifier: "showEvaluationController", sender: sendableObject)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showEvaluationController" {
             let navDestination = segue.destination as! UINavigationController
             let destination = navDestination.topViewController as! EvaluationViewController
-            destination.navigationName.title = (sender as! String)
+            let data = sender as! CourseData
+            destination.navigationName.title = (data.courseName)
+            destination.numberOfStudent = data.numberOfStudent
         }
     }
 }

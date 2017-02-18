@@ -6,16 +6,14 @@
 //  Copyright © 2017 Macintosh. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class CourseData {
     var courseName: String!
     var numberOfStudent: Int!
     
-    
-    init(courseName: String, numberOfStudent: Int) {
+    init(courseName: String!, numberOfStudent: Int!) {
         self.courseName = courseName
         self.numberOfStudent = numberOfStudent
     }
-    
 }
