@@ -18,4 +18,12 @@ class EvaluationViewController: UIViewController {
     @IBAction func cancelBtnPress(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
     }
+    
+    
+    
+    func showAlertDialog() {
+        let alert = UIAlertController(title: "", message: "This is my message.", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 }

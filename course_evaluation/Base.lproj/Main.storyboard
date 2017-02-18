@@ -41,7 +41,7 @@
                                 <rect key="frame" x="0.0" y="28" width="768" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hRF-Uh-UkF" id="Uqg-L5-yCQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="702" height="60"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="702" height="59"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDt-km-niz">
@@ -113,7 +113,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0v-VY-joX">
                                                 <rect key="frame" x="0.0" y="0.0" width="256" height="207.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <state key="normal" title="7"/>
                                                 <connections>
                                                     <action selector="btnPress:" destination="kcf-ef-Fkk" eventType="touchUpInside" id="vhK-xi-YN9"/>
@@ -121,7 +121,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZL-Zl-UVY">
                                                 <rect key="frame" x="256" y="0.0" width="256" height="207.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <state key="normal" title="8"/>
                                                 <connections>
                                                     <action selector="btnPress:" destination="kcf-ef-Fkk" eventType="touchUpInside" id="YIZ-E2-Jni"/>
@@ -129,7 +129,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCP-Hw-hwu">
                                                 <rect key="frame" x="512" y="0.0" width="256" height="207.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <state key="normal" title="9"/>
                                                 <connections>
                                                     <action selector="btnPress:" destination="kcf-ef-Fkk" eventType="touchUpInside" id="xgO-rI-pco"/>
@@ -150,7 +150,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDI-zE-SJq">
                                                 <rect key="frame" x="0.0" y="0.0" width="256" height="207.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <state key="normal" title="4"/>
                                                 <connections>
                                                     <action selector="btnPress:" destination="kcf-ef-Fkk" eventType="touchUpInside" id="HGE-7X-JxV"/>
@@ -158,7 +158,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGT-fx-Pv0">
                                                 <rect key="frame" x="256" y="0.0" width="256" height="207.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <state key="normal" title="5"/>
                                                 <connections>
                                                     <action selector="btnPress:" destination="kcf-ef-Fkk" eventType="touchUpInside" id="X2i-7R-9xt"/>
@@ -166,7 +166,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5U-08-Q9Q">
                                                 <rect key="frame" x="512" y="0.0" width="256" height="207.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <state key="normal" title="6"/>
                                                 <connections>
                                                     <action selector="btnPress:" destination="kcf-ef-Fkk" eventType="touchUpInside" id="dwf-ie-tl8"/>
@@ -187,7 +187,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOA-cv-PGP">
                                                 <rect key="frame" x="0.0" y="0.0" width="256" height="207.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <state key="normal" title="1"/>
                                                 <connections>
                                                     <action selector="btnPress:" destination="kcf-ef-Fkk" eventType="touchUpInside" id="hjw-IV-uOj"/>
@@ -195,7 +195,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHC-Ck-O1e">
                                                 <rect key="frame" x="256" y="0.0" width="256" height="207.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <state key="normal" title="2"/>
                                                 <connections>
                                                     <action selector="btnPress:" destination="kcf-ef-Fkk" eventType="touchUpInside" id="mZC-Cd-Q5u"/>
@@ -203,7 +203,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Jr-jd-9XE">
                                                 <rect key="frame" x="512" y="0.0" width="256" height="207.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <state key="normal" title="3"/>
                                                 <connections>
                                                     <action selector="btnPress:" destination="kcf-ef-Fkk" eventType="touchUpInside" id="6mc-CK-tRR"/>
@@ -224,7 +224,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGG-pc-9d1">
                                                 <rect key="frame" x="0.0" y="0.0" width="256" height="207.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <state key="normal" title="Clear"/>
                                                 <connections>
                                                     <action selector="clear:" destination="kcf-ef-Fkk" eventType="touchUpInside" id="Opl-vn-Yek"/>
@@ -232,7 +232,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6M-RO-XHS">
                                                 <rect key="frame" x="256" y="0.0" width="256" height="207.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <state key="normal" title="0"/>
                                                 <connections>
                                                     <action selector="btnPress:" destination="kcf-ef-Fkk" eventType="touchUpInside" id="qQn-Vu-hrb"/>
@@ -240,7 +240,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pQ-Rt-3MX">
                                                 <rect key="frame" x="512" y="0.0" width="256" height="207.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <state key="normal" title="Enter"/>
                                                 <connections>
                                                     <action selector="submit:" destination="kcf-ef-Fkk" eventType="touchUpInside" id="Srf-el-REm"/>
