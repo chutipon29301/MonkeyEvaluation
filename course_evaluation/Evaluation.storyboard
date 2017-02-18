@@ -20,6 +20,53 @@
                     <view key="view" contentMode="scaleToFill" id="hOW-Zw-YgX">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56d-c4-aTp">
+                                <rect key="frame" x="20" y="327" width="131" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="btnPressed:" destination="9KD-Im-uAe" eventType="touchUpInside" id="t2o-nQ-jBF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ip-6p-kgD">
+                                <rect key="frame" x="319" y="327" width="131" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="btnPressed:" destination="9KD-Im-uAe" eventType="touchUpInside" id="9rF-2b-eKP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8h-tm-Aoc">
+                                <rect key="frame" x="154" y="579" width="131" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="btnPressed:" destination="9KD-Im-uAe" eventType="touchUpInside" id="j0f-af-Y1d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovY-07-CG7">
+                                <rect key="frame" x="617" y="327" width="131" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="btnPressed:" destination="9KD-Im-uAe" eventType="touchUpInside" id="6S1-KI-P0c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ax1-L3-k4C">
+                                <rect key="frame" x="481" y="579" width="131" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="btnPressed:" destination="9KD-Im-uAe" eventType="touchUpInside" id="x4l-bg-S9x"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Course Name" id="cWV-3A-08x">
@@ -31,11 +78,16 @@
                     </navigationItem>
                     <connections>
                         <outlet property="navigationName" destination="cWV-3A-08x" id="oFC-FZ-qaJ"/>
+                        <outletCollection property="collectionOfButtons" destination="56d-c4-aTp" collectionClass="NSMutableArray" id="2f7-3V-aSE"/>
+                        <outletCollection property="collectionOfButtons" destination="E8h-tm-Aoc" collectionClass="NSMutableArray" id="lJ9-xF-6gP"/>
+                        <outletCollection property="collectionOfButtons" destination="7ip-6p-kgD" collectionClass="NSMutableArray" id="q8q-PI-d1X"/>
+                        <outletCollection property="collectionOfButtons" destination="ax1-L3-k4C" collectionClass="NSMutableArray" id="cpF-D5-rRR"/>
+                        <outletCollection property="collectionOfButtons" destination="ovY-07-CG7" collectionClass="NSMutableArray" id="2Y0-i0-Wc9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jZT-FL-3dv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="612" y="87"/>
+            <point key="canvasLocation" x="611.71875" y="86.71875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5a7-hF-nSU">
