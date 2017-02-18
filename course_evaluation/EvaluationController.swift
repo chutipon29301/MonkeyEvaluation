@@ -10,36 +10,61 @@ import UIKit
 
 class EvaluationViewController: UIViewController {
     
+    var isButtonValueValid = false
+    var isFirstValueInput = true
+    var currentButtonValue = 0
     var numberOfStudent: Int!
-    var numberList = ["1", "2", "3", "4", "5"]
-    
-    @IBOutlet var collectionOfButtons: Array<UIButton>?
-
-    @IBOutlet weak var navigationName: UINavigationItem!
-    
-    @IBAction func cancelBtnPress(_ sender: UIBarButtonItem) {
-        self.dismiss(animated: true, completion: nil)
-    }
+    var imageList = [
+        (value: 1, image: #imageLiteral(resourceName: "btnBallBg01")),
+        (value: 2, image: #imageLiteral(resourceName: "btnBallBg02")),
+        (value: 3, image: #imageLiteral(resourceName: "btnBallBg03")),
+        (value: 4, image: #imageLiteral(resourceName: "btnBallBg04")),
+        (value: 5, image: #imageLiteral(resourceName: "btnBallBg05")),
+        ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         assignNumberToButton()
     }
     
+    @IBOutlet var collectionOfButtons: Array<UIButton>?
+    
+    @IBOutlet weak var navigationName: UINavigationItem!
+    
+    @IBAction func cancelBtnPress(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func btnPressed(_ sender: UIButton) {
+        if !isFirstValueInput {
+            isButtonValueValid = (currentButtonValue == sender.tag)
+            currentButtonValue = 0
+            showAlertDialog()
+        }else{
+            currentButtonValue = sender.tag
+        }
+        isFirstValueInput = !isFirstValueInput
         assignNumberToButton()
     }
     
     func showAlertDialog() {
-        let alert = UIAlertController(title: "", message: "This is my message.", preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+        if isButtonValueValid {
+            let alert = UIAlertController(title: "Next", message: "Pass iPad to next person", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }else{
+            let alert = UIAlertController(title: "Invalid input", message: "Select Number Again", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Try Again", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        isButtonValueValid = false
     }
     
     func assignNumberToButton() {
-        numberList.shuffle()
+        imageList.shuffle()
         for i in (0...collectionOfButtons!.count - 1){
-            collectionOfButtons![i].setTitle(numberList[i], for: .normal)
+            collectionOfButtons![i].tag = imageList[i].value
+            collectionOfButtons![i].setImage(imageList[i].image, for: .normal)
         }
     }
 }
