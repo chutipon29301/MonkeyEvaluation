@@ -111,8 +111,14 @@
                                 <action selector="cancelBtnPress:" destination="9KD-Im-uAe" id="Yvl-3c-bsF"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="hQE-mL-Ke9">
+                            <connections>
+                                <action selector="cancelBtnPress:" destination="9KD-Im-uAe" id="1BH-yP-tSJ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="doneBtn" destination="hQE-mL-Ke9" id="4Fr-pt-Dj4"/>
                         <outlet property="navigationName" destination="cWV-3A-08x" id="oFC-FZ-qaJ"/>
                         <outletCollection property="collectionOfButtons" destination="56d-c4-aTp" collectionClass="NSMutableArray" id="TU2-ew-Ug9"/>
                         <outletCollection property="collectionOfButtons" destination="7ip-6p-kgD" collectionClass="NSMutableArray" id="OlI-Om-KFj"/>

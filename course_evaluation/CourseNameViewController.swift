@@ -36,7 +36,8 @@ class courseNameViewController: UIViewController {
             let navDestination = segue.destination as! UINavigationController
             let destination = navDestination.topViewController as! EvaluationViewController
             let data = sender as! CourseData
-            destination.navigationName.title = (data.courseName)
+            destination.courseName = data.courseName
+//            destination.navigationName.title = (data.courseName)
             destination.numberOfStudent = data.numberOfStudent
         }
     }

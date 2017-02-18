@@ -14,6 +14,9 @@ class EvaluationViewController: UIViewController {
     var isFirstValueInput = true
     var currentButtonValue = 0
     var numberOfStudent: Int!
+    var currentStudent = 1
+    var courseName: String!
+    
     var imageList = [
         (value: 1, image: #imageLiteral(resourceName: "btnBallBg01")),
         (value: 2, image: #imageLiteral(resourceName: "btnBallBg02")),
@@ -24,12 +27,16 @@ class EvaluationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationName()
         assignNumberToButton()
+        doneBtn.isEnabled = false
     }
     
     @IBOutlet var collectionOfButtons: Array<UIButton>?
     
     @IBOutlet weak var navigationName: UINavigationItem!
+    
+    @IBOutlet weak var doneBtn: UIBarButtonItem!
     
     @IBAction func cancelBtnPress(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
@@ -38,8 +45,8 @@ class EvaluationViewController: UIViewController {
     @IBAction func btnPressed(_ sender: UIButton) {
         if !isFirstValueInput {
             isButtonValueValid = (currentButtonValue == sender.tag)
-            currentButtonValue = 0
             showAlertDialog()
+            currentButtonValue = 0
         }else{
             currentButtonValue = sender.tag
         }
@@ -48,10 +55,19 @@ class EvaluationViewController: UIViewController {
     }
     
     func showAlertDialog() {
+        if currentStudent == numberOfStudent {
+            let alert = UIAlertController(title: "Done", message: "Return iPad to Instructor", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            doneBtn.isEnabled = true
+        }
         if isButtonValueValid {
             let alert = UIAlertController(title: "Next", message: "Pass iPad to next person", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
+            currentStudent += 1
+            setNavigationName()
+            print(currentButtonValue)
         }else{
             let alert = UIAlertController(title: "Invalid input", message: "Select Number Again", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Try Again", style: UIAlertActionStyle.default, handler: nil))
@@ -66,6 +82,10 @@ class EvaluationViewController: UIViewController {
             collectionOfButtons![i].tag = imageList[i].value
             collectionOfButtons![i].setImage(imageList[i].image, for: .normal)
         }
+    }
+    
+    func setNavigationName() {
+        navigationName.title = courseName + ": Student number " + String(currentStudent)
     }
 }
 
